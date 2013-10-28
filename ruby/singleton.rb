@@ -15,6 +15,11 @@
       They permit lazy allocation and initialization, whereas global variables in many languages will always consume resources.
 
     classic pattern is to check for existing instance of the class, if not there, instantiate a new object
+
+    issues with singletons:
+      • effectively creating global scope
+      • tightly coupling code to implementation
+      • make it difficult to change / override behavior
 =end
 
 # http://dalibornasevic.com/posts/9-ruby-singleton-pattern-again
